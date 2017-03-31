@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Program Studi</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Program Studi</h1>
+    <hr/>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputNama" class="col-sm-2 control-label">Nama</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputNama" placeholder="Nama"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputKeterangan" class="col-sm-2 control-label">Keterangan</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" rows="3" id="inputKeterangan"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputJenjang" class="col-sm-2 control-label">Jenjang</label>
+            <div class="col-sm-10">
+                <select class="form-control">
+                    <option>Pilih Jenjang...</option>
+                    <option>D3</option>
+                    <option>S1</option>
+                    <option>S2</option>
+                    <option>S3</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Simpan</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
